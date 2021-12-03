@@ -1,0 +1,17 @@
+.card-text, .text-muted {
+    color: #333;
+    text-shadow: none;
+}
+
+.card-text-main {
+    font-size: 18px;
+    color: #333;
+    text-shadow: none;
+    margin-top: 5px;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+

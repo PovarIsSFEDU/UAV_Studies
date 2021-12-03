@@ -2,6 +2,8 @@ package com.holydev.bpla;
 
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+
 
 @org.springframework.stereotype.Controller
 @CrossOrigin
@@ -35,6 +37,18 @@ public class Controller {
     @GetMapping("/3rd")
     public String third() {
         return "3rd";
+    }
+
+    @GetMapping("/git")
+    public void git(HttpServletResponse httpServletResponse) {
+        httpServletResponse.setHeader("Location", "https://github.com/ryabchikk/Hacaton_final_rosseti");
+        httpServletResponse.setStatus(302);
+    }
+
+    @GetMapping("/download")
+    @ResponseBody
+    public void getFile() {
+
     }
 
 
